@@ -68,3 +68,4 @@ Launch Moveit. After octomap display in Moveit, you can start path planning with
 $ rosrun hypharos_ardrone ardrone_controller
 ```
 Press "p" and "s" to let Ardrone follow the path.
+
