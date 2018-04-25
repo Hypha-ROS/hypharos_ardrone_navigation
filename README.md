@@ -10,9 +10,10 @@ This repo simplified and arranged the source code form origin version which deve
 However, those packages including tum_ardrone and lsd_slam are kind of out of date.
 Since there are more efficient algorithm can be applied in this project now, We will continue improving the repo in the future.   
 
-Concept & Architecture Notes (by Kung):   
-https://medium.com/@k3083518729/ardrone-indoor-slam-navigation-eec3812581dd   
+# Concept & Architecture  
+Medium Notes (by Kung): https://medium.com/@k3083518729/ardrone-indoor-slam-navigation-eec3812581dd   
 
+# Maintainers & Developers
 The major maintainers of this repo are:  
 *PouChun, Kung (k3083518729@gmail.com)   
 *HaoChih, LIN (hypha.ros@gmail.com)  
@@ -29,7 +30,8 @@ but don't forget to install the dependences of them.)
   
 # Operation  
 
-## 1. tum_ardone (https://github.com/tum-vision/tum_ardrone)
+## 1. tum_ardone 
+(https://github.com/tum-vision/tum_ardrone)  
 
 ``` bash
 $ roslaunch tum_ardrone ardrone_driver.launch
@@ -40,7 +42,8 @@ $ roslaunch tum_ardrone tum_ardrone.launch
 ```
 Initial PTAM and ensure pose estimate is correct (first fly up 1m and then down 1m to facilitate a good scale estimate).
 
-## 2. lsd_slam (https://github.com/tum-vision/lsd_slam)
+## 2. lsd_slam 
+(https://github.com/tum-vision/lsd_slam)  
 
 ``` bash
 $ rosrun lsd_slam_viewer viewer
@@ -48,7 +51,8 @@ $ rosrun lsd_slam_core live_slam image:=/ardrone/front/image_rect camera_info:=/
 ```
 Ensure pose estimate is correct.
 
-## 3. hypharos_ardrone (https://github.com/Hypha-ROS/hypharos_ardrone_navigation)
+## 3. hypharos_ardrone 
+(https://github.com/Hypha-ROS/hypharos_ardrone_navigation)  
 
 ``` bash
 $ rosrun hypharos_ardrone conversion
