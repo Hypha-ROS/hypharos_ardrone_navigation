@@ -1,0 +1,32 @@
+<launch>
+	<!-- Parameters -->
+    <arg name="droneip" default="192.168.1.1" />
+    <arg name="image" default="/ardrone/front/image_rect" />
+    <arg name="camera_info" default="/ardrone/front/camera_info" />
+    <!-- <arg name="lsd_world_frame" default="world" /> -->
+
+    <!-- Ardrone SDK -->
+    <node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver" output="screen" args="-ip $(arg droneip)">
+        <param name="outdoor" value="false" />	
+        <param name="altitude_max" value="3000" />
+        <param name="euler_angle_max" value="0.35" />
+        <param name="indoor_euler_angle_max" value="0.35" />
+        <param name="navdata_demo" value="False" />
+        <param name="realtime_navdata" value="True" />
+        <param name="realtime_video" value="True" />
+        <param name="do_imu_caliberation" value="True" />
+        <param name="looprate" value="30" />
+    </node>
+
+    <node pkg="image_proc" type="image_proc"  ns="/ardrone/front/" name="image_proc"/>
+
+    <!-- TUM ARDrone -->
+    <node name="drone_stateestimation" pkg="tum_ardrone" type="drone_stateestimation"/>
+    <node name="drone_autopilot" pkg="tum_ardrone" type="drone_autopilot"/>
+    <node name="drone_gui" pkg="tum_ardrone" type="drone_gui"/>
+
+    <!-- LSD SLAM -->
+    <node name="lsd_slam_display" pkg="lsd_slam_viewer" type="viewer" />
+    <node name="lsd_slam" pkg="lsd_slam_core" type="live_slam" respawn="true" output="screen" args="image:=$(arg image) camera_info:=$(arg camera_info) lsd_world_frame:=$(arg lsd_world_frame)"/>
+        
+</launch>

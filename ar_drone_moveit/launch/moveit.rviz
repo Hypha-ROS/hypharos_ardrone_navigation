@@ -1,0 +1,402 @@
+Panels:
+  - Class: rviz/Help
+    Name: Help
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /MotionPlanning1/Planning Request1
+        - /MotionPlanning1/Planned Path1
+        - /TF1/Frames1
+      Splitter Ratio: 0.833992
+    Tree Height: 843
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: false
+      Move Group Namespace: ""
+      MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Attempts: 10
+      MoveIt_Planning_Time: 1
+      MoveIt_Use_Constraint_Aware_IK: true
+      MoveIt_Warehouse_Host: 127.0.0.1
+      MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 30
+          Y: 30
+          Z: 30
+      Name: MotionPlanning
+      Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          air_column:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          arm1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          landing_gear:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          shadow:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Loop Animation: true
+        Robot Alpha: 0.3
+        Robot Color: 150; 50; 150
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: true
+        State Display Time: 0.05 s
+        Trail Step Size: 1
+        Trajectory Topic: /move_group/display_planned_path
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.08
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 250; 128; 0
+        Interactive Marker Size: 0
+        Joint Violation Color: 255; 0; 255
+        Planning Group: altHold
+        Query Goal State: true
+        Query Start State: true
+        Show Workspace: true
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: /move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 1
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.2
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          air_column:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          arm1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          arm4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          blade4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          landing_gear:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          shadow:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /ardrone/front/image_rect
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.1
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.01
+      Head Radius: 0.01
+      Name: Pose
+      Shaft Length: 0.05
+      Shaft Radius: 0.005
+      Shape: Arrow
+      Topic: /lsd_slam/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 1
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.01
+      Style: Flat Squares
+      Topic: /pointcloud2_scaled
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        air_column:
+          Value: false
+        ardrone_base_bottomcam:
+          Value: true
+        ardrone_base_frontcam:
+          Value: true
+        ardrone_base_link:
+          Value: true
+        arm1:
+          Value: false
+        arm2:
+          Value: false
+        arm3:
+          Value: false
+        arm4:
+          Value: false
+        blade1:
+          Value: false
+        blade2:
+          Value: false
+        blade3:
+          Value: false
+        blade4:
+          Value: false
+        cam_front:
+          Value: true
+        landing_gear:
+          Value: false
+        lsd_pose:
+          Value: false
+        lsd_world:
+          Value: false
+        map:
+          Value: true
+        odom:
+          Value: false
+        shadow:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          cam_front:
+            {}
+          shadow:
+            air_column:
+              landing_gear:
+                arm1:
+                  blade1:
+                    {}
+                arm2:
+                  blade2:
+                    {}
+                arm3:
+                  blade3:
+                    {}
+                arm4:
+                  blade4:
+                    {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 5.15678
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -1.4106
+        Y: -0.0476257
+        Z: -2.29219e-06
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: -0.00520408
+      Target Frame: shadow
+      Value: XYOrbit (rviz)
+      Yaw: 2.69277
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1056
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003dafc0200000007fb0000000800480065006c00700000000028000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000000a0049006d00610067006500000000280000009a0000001600fffffffc00000028000003da000000dd00fffffffa000000010100000002fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000000ffffffff0000000000000000fb000000100044006900730070006c00610079007301000000000000010f0000016a00fffffffb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067000000015b000002a7000000160000001600000496000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1869
+  X: 51
+  Y: 24

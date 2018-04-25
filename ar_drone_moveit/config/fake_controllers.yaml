@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_altHold_controller
+    joints:
+      - planar
+      - yaw_joint
+  - name: fake_freeFlight_controller
+    joints:
+      - planar/y
+      - yaw_joint
+      - Z_joint

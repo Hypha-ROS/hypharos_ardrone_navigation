@@ -1,0 +1,25 @@
+<package>
+
+  <name>ar_drone_moveit</name>
+  <version>0.2.0</version>
+  <description>
+     An automatically generated package with all the configuration and launch files for using the ar_drone with the MoveIt Motion Planning Framework
+  </description>
+
+  <author email="f44006076@gmail.com">HaoChih, Lin</author>
+  <maintainer email="hypharos@gmail.com">HyphaROS Workshop</maintainer>
+  <maintainer email="k3083518729@gmail.com">POU CHUN, KUNG</maintainer>
+  <license>Apache 2.0</license>
+  <url type="website">https://hypharosworkshop.wordpress.com/</url>
+
+  <run_depend>moveit_ros_move_group</run_depend>
+  <run_depend>moveit_planners_ompl</run_depend>
+  <run_depend>moveit_ros_visualization</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>xacro</run_depend>
+  
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+</package>

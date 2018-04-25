@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package>
+  <name>hypharos_ardrone</name>
+  <version>0.0.0</version>
+  <description>The hypharos_ardrone package</description>
+
+  <author email="f44006076@gmail.com">HaoChih, Lin</author>
+  <maintainer email="hypharos@gmail.com">HyphaROS Workshop</maintainer>
+  <maintainer email="k3083518729@gmail.com">POU CHUN, KUNG</maintainer>
+  <license>Apache 2.0</license>
+  <url type="website">https://hypharosworkshop.wordpress.com/</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>tum_ardrone</build_depend>
+  <build_depend>ardrone_autonomy</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>moveit_core</build_depend>
+  <build_depend>moveit_ros_planning_interface</build_depend>
+  <build_depend>moveit_ros_perception</build_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>moveit_core</run_depend>
+  <run_depend>moveit_fake_controller_manager</run_depend>
+  <run_depend>moveit_ros_planning_interface</run_depend>
+  <run_depend>moveit_ros_perception</run_depend>
+  <run_depend>cmake_modules</run_depend> 
+  <run_depend>tum_ardrone</run_depend> 
+  <run_depend>ardrone_autonomy</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- You can specify that this package is a metapackage here: -->
+    <!-- <metapackage/> -->
+
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<robot name="ar_drone">
+
+  <link name="shadow">
+  </link>
+
+  <link name="air_column">
+  </link>
+
+  <link name="landing_gear">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.15"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.15"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+  
+  <link name="arm2">
+    <visual>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 0.7854" xyz="0.063639 0.063639 0"/>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 0.7854" xyz="0.063639 0.063639 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="arm1">
+    <visual>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 -0.7854" xyz="0.063639 -0.063639 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 -0.7854" xyz="0.063639 -0.063639 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="arm4">
+    <visual>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 2.3562" xyz="-0.063639 0.063639 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 2.3562" xyz="-0.063639 0.063639 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="arm3">
+    <visual>
+      <geometry>
+        <box size=".18 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 -2.3562" xyz="-0.063639 -0.063639 0"/>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".018 .02 .02"/>
+      </geometry>
+      <origin rpy="0 0 -2.3562" xyz="-0.063639 -0.063639 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="blade1">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="front">
+        <color rgba="1 1 1 0.6"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="blade2">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="front">
+        <color rgba="1 1 1 0.6"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="blade3">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="back">
+        <color rgba="1 0 0 0.6"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <link name="blade4">
+    <visual>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="back">
+        <color rgba="1 0 0 0.6"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.02" radius="0.13"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="1.0" ixz="1.0" iyy="1.0" iyz="1.0" izz="1.0"/>
+    </inertial>
+  </link>
+
+  <joint name="Z_joint" type="prismatic">
+    <parent link="air_column"/>
+    <child link="landing_gear"/>
+    <limit effort="1000.0" lower="-10" upper="10" velocity="100"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  <joint name="yaw_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <parent link="shadow"/>
+    <child link="air_column"/>
+    <origin xyz="0 0 0"/>
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+  <joint name="base_to_arm1" type="fixed">
+    <parent link="landing_gear"/>
+    <child link="arm1"/>
+    <origin xyz="0 0 0.06"/>
+  </joint>
+
+  <joint name="base_to_arm2" type="fixed">
+    <parent link="landing_gear"/>
+    <child link="arm2"/>
+    <origin xyz="0 0 0.06"/>
+  </joint>
+
+  <joint name="base_to_arm3" type="fixed">
+    <parent link="landing_gear"/>
+    <child link="arm3"/>
+    <origin xyz="0 0 0.06"/>
+  </joint>
+
+  <joint name="base_to_arm4" type="fixed">
+    <parent link="landing_gear"/>
+    <child link="arm4"/>
+    <origin xyz="0 0 0.06"/>
+  </joint>
+
+  <joint name="motor1" type="fixed">
+    <parent link="arm1"/>
+    <child link="blade1"/>
+    <origin xyz="0.12728 -0.12728 .02"/>
+  </joint>
+
+  <joint name="motor2" type="fixed">
+    <parent link="arm2"/>
+    <child link="blade2"/>
+    <origin xyz="0.12728 0.12728 .02"/>
+  </joint>
+
+  <joint name="motor3" type="fixed">
+    <parent link="arm3"/>
+    <child link="blade3"/>
+    <origin xyz="-0.12728 -0.12728 .02"/>
+  </joint>
+
+  <joint name="motor4" type="fixed">
+    <parent link="arm4"/>
+    <child link="blade4"/>
+    <origin xyz="-0.12728 0.12728 .02"/>
+  </joint>
+
+</robot>
