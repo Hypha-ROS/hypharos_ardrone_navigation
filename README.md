@@ -69,3 +69,8 @@ $ rosrun hypharos_ardrone ardrone_controller
 ```
 Press "p" and "s" to let Ardrone follow the path.
 
+# rqt node graph 
+
+<p align="center">
+  <img src="https://github.com/kungfrank/LED_Drone/blob/master/system_plot.png" width="700"/>
+</p>
