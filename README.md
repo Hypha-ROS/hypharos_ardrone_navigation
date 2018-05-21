@@ -72,5 +72,5 @@ Press "p" and "s" to let Ardrone follow the path.
 # rqt node graph 
 
 <p align="center">
-  <img src="https://github.com/kungfrank/LED_Drone/blob/master/system_plot.png" width="700"/>
+  <img src="https://github.com/Hypha-ROS/hypharos_ardrone_navigation/blob/master/Ardrone_indoor_slam.jpg" width="700"/>
 </p>
