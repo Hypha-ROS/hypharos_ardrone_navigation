@@ -57,7 +57,7 @@ Ensure pose estimate is correct.
 ``` bash
 $ rosrun hypharos_ardrone conversion
 ```
-Do conversion. Flying Ardrone around (up, down, left, right, forward, backward, and slight yaw rotation) until dq and dx values converge completely (steady dq and dx values), press "l" to lock them, and press "p" to publish point cloud.(in conversion node)
+Do conversion. Flying Ardrone around (up, down, left, right, forward, backward, and slight yaw rotation) until dq and dx values converge completely (with steady dq and dx values), press "l" to lock them, and press "p" to publish point cloud.(in conversion node)
  
 ```bash
 $ roslaunch ar_drone_moveit demo.launch
